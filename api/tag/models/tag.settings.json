@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "display_name": {
+      "type": "string",
+      "required": true
+    },
+    "seo_name": {
+      "type": "uid",
+      "targetField": "display_name",
+      "required": true
+    }
+  }
+}
