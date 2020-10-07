@@ -8978,10 +8978,8 @@ strapi-admin@3.2.1:
     webpackbar "^4.0.0"
     yup "^0.27.0"
 
-strapi-connector-bookshelf@3.2.1:
+"strapi-connector-bookshelf@file:packages/strapi-connector-bookshelf":
   version "3.2.1"
-  resolved "https://registry.yarnpkg.com/strapi-connector-bookshelf/-/strapi-connector-bookshelf-3.2.1.tgz#a1fe3bc09d64386dc5fc3ef4926b2db0acb02dbe"
-  integrity sha512-/0EREMBO6vsOG3ipHl4dT9pmrX8Iy/t7qPmilopOLv9jTKdEl5j9iflBswpeO0s3AvcWc2Q76smd2M/fEra0zA==
   dependencies:
     bookshelf "^1.0.1"
     date-fns "^2.8.1"
