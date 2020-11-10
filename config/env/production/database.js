@@ -6,7 +6,7 @@ console.log(config);
 
 // This is my Heroku Config
 
-module.exports = ({ env }) => ({
+postgres: module.exports = ({ env }) => ({
   defaultConnection: "default",
   connections: {
     default: {
@@ -18,7 +18,7 @@ module.exports = ({ env }) => ({
         database: config.database,
         username: config.user,
         password: config.password,
-        schema: config.schema,
+        schema: "public",
       },
       options: {
         ssl: false,
