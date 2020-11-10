@@ -1,3 +1,5 @@
 module.exports = ({ env }) => ({
-  url: 'https://dm-strapi-test.herokuapp.com'
+  url: "https://dm-strapi-test.herokuapp.com",
 });
+
+// Slowwwwww heroku
