@@ -1,14 +1,16 @@
-var parse = require('pg-connection-string').parse;
+var parse = require("pg-connection-string").parse;
 
 var config = parse(process.env.DATABASE_URL);
 
+// This is my Heroku Config
+
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "bookshelf",
       settings: {
-        client: 'postgres',
+        client: "postgres",
         host: config.host,
         port: config.port,
         database: config.database,
@@ -17,7 +19,7 @@ module.exports = ({ env }) => ({
       },
       options: {
         ssl: false,
-        debug: true
+        debug: true,
       },
     },
   },
